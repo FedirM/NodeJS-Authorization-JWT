@@ -25,6 +25,6 @@ I use `bcrypt.js` for encrypt/decrypt user's password. All information write on 
 ![](images/User-edit.png)
 
 5. **Admin edit**
-(seeing as admin has access to all users, he/she also can take or deprive a privilege)
+(seeing as admin has access to all users, he/she also can grant or revoke a privilege)
 
 ![](images/Admin-edit.png)
