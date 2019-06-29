@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Admin</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <% include ./style.ejs %>
+    <div>
+      <% include ./NavBar.ejs %>
+    </div>
+
+    <table class="table">
+        <tr>
+           <th>#</th><th>Name</th><th>Role</th><th>Last seen</th><th></th><th></th>
+        </tr>
+     
+        <% for (let i = 0; i < usersData.length; i++) { %>
+         <tr>
+           <td><%= i+1 %></td>
+           <td><%= usersData[i].u_name %></td>
+           <td><%= (usersData[i].u_role)?"admin":"user" %></td>
+           <td><%= usersData[i].lastseen %></td>
+           <td><a class="button button1" href="/admin/edit/<%= usersData[i].u_id %>">Edit</a></td>
+           <td><a class="button button1" href="/admin/view/<%= usersData[i].u_id %>">View</a></td>
+         </tr>    
+        <% } %>
+     </table>
+</body>

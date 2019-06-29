@@ -1,0 +1,7 @@
+<% include ./style.ejs %>
+
+<ul>
+    <li><a class="navbarbtn" href="/logout">Log out</a></li>
+    <li><div class="lbl">Role: <%= (u_role)? "Admin" : "User"%></div></li>
+    <li><div class="lbl">Name: <%= u_name %></div></li>
+  </ul>

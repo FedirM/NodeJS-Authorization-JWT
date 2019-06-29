@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Edit</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <% include ./style.ejs %>
+    <div>
+      <% include ./NavBar.ejs %>
+    </div>
+    <form autocomplete='off' class='form' action="/admin/edit" method="post">
+        <div class='control'>
+            <h1>
+                Edit
+            </h1>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='username' placeholder='Username' type='text' value=<%= u_name %>>
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='password' placeholder='New password' type='password'>
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='isAdmin' type='checkbox' value='Admin' style="width: 10%" <%= (u_role) ? "checked" : "" %> >
+            <input name='ad' type='text' value='Admin' disabled style="width: 80%">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <div>
+            <button class="button button1" type="submit" style="float: left">Save</button>
+            <a class="button button2" href="/admin"  style="float: right">Cancel</a>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

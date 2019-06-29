@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Info</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <% include ./style.ejs %>
+    <div>
+      <% include ./NavBar.ejs %>
+    </div>
+
+    <div class="view">
+        <div style="margin-left: 20px">
+            <h1> User Info </h1>
+        </div>
+    
+        <div style="padding: 25px 0px 10px 0px">
+            <span>Name: <%= u_name %></span>
+        </div>
+        <div style="padding-bottom: 10px">
+            <span>Role: <%= (u_role) ? 'admin' : 'user' %></span>
+        </div>
+        <div style="padding-bottom: 10px">
+            <span>Lastseen: <%= lastseen %></span>
+        </div>
+        <a class="button button1" href="/edit">Edit</a>
+    </div>
+</body>

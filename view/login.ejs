@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Logging</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <% include ./style.ejs %>
+    <form autocomplete='off' class='form' action="/login" method="post">
+        <div class='control'>
+            <row>
+                <h1>
+                    Sign In
+                </h1>
+                <a href="register" style="color:cyan; margin-left: 200px;">Register</a>
+            </row>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='username' placeholder='Username' type='text'>
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <div class='control block-cube block-input'>
+            <input name='password' placeholder='Password' type='password'>
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+        </div>
+        <button class='btn block-cube block-cube-hover' type="submit">
+            <div class='bg-top'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg-right'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='bg'>
+                <div class='bg-inner'></div>
+            </div>
+            <div class='text'>
+                Log In
+            </div>
+        </button>
+    </form>
+
+
+</body>
+
+</html>
