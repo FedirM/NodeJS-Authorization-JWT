@@ -1,4 +1,4 @@
-#Node.js Authorization with JWT and Cookies
+Node.js Authorization with JWT and Cookies
 ===
 
 This is the test application shows how to work with JWT(json web token) using cookies.
