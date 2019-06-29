@@ -2,7 +2,7 @@
 ===
 
 This is the test application shows how to work with JWT(json web token) using cookies.
-I use `bcrypt.js` for user's password. All information write on the MongoDB using `mongoose.js`. All html pages - *ejs* templates.
+I use `bcrypt.js` for encrypt/decrypt user's password. All information write on the MongoDB using `mongoose.js`. All html pages generated with *ejs* templates.
 
 1. **Registration/Authorization**
 
